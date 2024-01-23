@@ -30,6 +30,9 @@ RUN apt-get update -y && \
     build-essential \
     netcat \
     intel-opencl-icd \
+    pocl-opencl-icd \
+    opencl-headers \
+    clinfo \
     && apt-get clean && rm -rf /var/lib/apt/lists/* && \
     chmod g-s /usr/bin/screen && \
     chmod 1777 /var/run/screen
